@@ -46,7 +46,7 @@
                 "Genl\\BroadcastTesting\\TestBroadcastServiceProvider"
             ],
             "aliases": {
-                "TestBroadcaster": "Genl\\BroadcastTesting\\TestBroadcasterFacade"
+                "BroadcastTesting": "Genl\\BroadcastTesting\\TestBroadcasterFacade"
             }
         }
     },
