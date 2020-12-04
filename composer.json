@@ -1,5 +1,5 @@
 {
-    "name": "jlndk/laravel-test-broadcaster",
+    "name": "GENL/laravel-broadcast-testing",
     "description": "A broadcast provider for testing event broadcasting",
     "keywords": [
         "laravel",
@@ -7,13 +7,13 @@
         "testing",
         "events"
     ],
-    "homepage": "https://github.com/jlndk/laravel-test-broadcaster",
+    "homepage": "https://github.com/GENL/laravel-broadcast-testing/",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jonas Lindenskov Nielsen",
-            "email": "hi@lindenskov.dev",
-            "homepage": "https://lindenskov.dev",
+            "name": "Ekcel Henrich Ekoumelong",
+            "email": "bigcodole@gmail.com",
+            "homepage": "https://ekcel-portofolio.firebaseapp.com",
             "role": "Developer"
         }
     ],
