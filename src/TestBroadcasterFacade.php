@@ -1,6 +1,6 @@
 <?php
 
-namespace Genl\TestBroadcaster;
+namespace Genl\BroadcastTesting;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool broadcastContainsAllChannels(array $broadcast, $channels)
  * @method static bool broadcastContainsChannel(array $broadcast, string $channel)
  *
- * @see \Genl\TestBroadcaster\TestBroadcaster
+ * @see \Genl\BroadcastTesting\TestBroadcaster
  */
 class TestBroadcasterFacade extends Facade
 {

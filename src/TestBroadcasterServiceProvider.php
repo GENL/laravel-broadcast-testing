@@ -1,6 +1,6 @@
 <?php
 
-namespace Genl\TestBroadcaster;
+namespace Genl\BroadcastTesting;
 
 use Illuminate\Broadcasting\BroadcastManager;
 use Illuminate\Foundation\Application;

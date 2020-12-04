@@ -1,6 +1,6 @@
 <?php
 
-namespace Genl\TestBroadcaster;
+namespace Genl\BroadcastTesting;
 
 use Illuminate\Support\Str;
 

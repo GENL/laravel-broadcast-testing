@@ -1,6 +1,6 @@
 <?php
 
-namespace Genl\TestBroadcaster\Tests;
+namespace Genl\BroadcastTesting\Tests;
 
 use PHPUnit\Framework\ExpectationFailedException;
 

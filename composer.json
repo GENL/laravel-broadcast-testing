@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Genl\\TestBroadcaster\\": "src"
+            "Genl\\BroadcastTesting\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Genl\\TestBroadcaster\\Tests\\": "tests"
+            "Genl\\BroadcastTesting\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Genl\\TestBroadcaster\\TestBroadcastServiceProvider"
+                "Genl\\BroadcastTesting\\TestBroadcastServiceProvider"
             ],
             "aliases": {
-                "TestBroadcaster": "Genl\\TestBroadcaster\\TestBroadcasterFacade"
+                "TestBroadcaster": "Genl\\BroadcastTesting\\TestBroadcasterFacade"
             }
         }
     },
