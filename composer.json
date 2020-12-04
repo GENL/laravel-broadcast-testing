@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Genl\\BroadcastTesting\\TestBroadcastServiceProvider"
+                "Genl\\BroadcastTesting\\TestBroadcasterServiceProvider"
             ],
             "aliases": {
                 "BroadcastTesting": "Genl\\BroadcastTesting\\TestBroadcasterFacade"
