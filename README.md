@@ -1,8 +1,8 @@
 # Test Laravel Event Broadcasting
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jlndk/laravel-test-broadcaster.svg?style=flat-square)](https://packagist.org/packages/jlndk/laravel-test-broadcaster)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/jlndk/laravel-test-broadcaster/run-tests?label=tests)](https://github.com/jlndk/laravel-test-broadcaster/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/jlndk/laravel-test-broadcaster.svg?style=flat-square)](https://packagist.org/packages/jlndk/laravel-test-broadcaster)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/GENL/laravel-broadcast-testing.svg?style=flat-square)](https://packagist.org/packages/GENL/laravel-broadcast-testing)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/GENL/laravel-broadcast-testing/run-tests?label=tests)](https://github.com/GENL/laravel-broadcast-testing/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/GENL/laravel-broadcast-testing.svg?style=flat-square)](https://packagist.org/packages/GENL/laravel-broadcast-testing)
 
 This package lets you test if Laravel events has been broadcasted. This is useful for TDD and End-to-end testing.
 
@@ -12,7 +12,7 @@ This package lets you test if Laravel events has been broadcasted. This is usefu
 1. Install the package via composer:
 
 ```bash
-composer require jlndk/laravel-test-broadcaster
+composer require GENL/laravel-broadcast-testing
 ```
 
 2. Add the test broadcaster to the `connections` array in `app/config/broadcasting.php`.
