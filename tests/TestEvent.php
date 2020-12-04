@@ -1,6 +1,6 @@
 <?php
 
-namespace Jlndk\TestBroadcaster\Tests;
+namespace Genl\TestBroadcaster\Tests;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;

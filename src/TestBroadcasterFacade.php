@@ -1,6 +1,6 @@
 <?php
 
-namespace Jlndk\TestBroadcaster;
+namespace Genl\TestBroadcaster;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Jlndk\TestBroadcaster\Tests;
+namespace Genl\TestBroadcaster\Tests;
 
-use Jlndk\TestBroadcaster\CanTestBroadcasting;
-use Jlndk\TestBroadcaster\TestBroadcasterFacade;
-use Jlndk\TestBroadcaster\TestBroadcasterServiceProvider;
+use Genl\TestBroadcaster\CanTestBroadcasting;
+use Genl\TestBroadcaster\TestBroadcasterFacade;
+use Genl\TestBroadcaster\TestBroadcasterServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
