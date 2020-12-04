@@ -1,7 +1,7 @@
 # Test Laravel Event Broadcasting
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/GENL/laravel-broadcast-testing.svg?style=flat-square)](https://packagist.org/packages/GENL/laravel-broadcast-testing)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/GENL/laravel-broadcast-testing/run-tests?label=tests)](https://github.com/GENL/laravel-broadcast-testing/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Actions Status](https://img.shields.io/github/workflow/status/genl/laravel-broadcast-testing/Tests?label=tests&style=flat)](https://github.com/genl/laravel-broadcast-testing/actions?query=workflow:Tests+branch:master)
 [![Total Downloads](https://img.shields.io/packagist/dt/GENL/laravel-broadcast-testing.svg?style=flat-square)](https://packagist.org/packages/GENL/laravel-broadcast-testing)
 
 This package lets you test if Laravel events has been broadcasted. This is useful for TDD and End-to-end testing.
