@@ -5,7 +5,12 @@ namespace Genl\TestBroadcaster;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Jlndk\TestBroadcaster\TestBroadcaster
+ * @method static void broadcast(array $channels, $event, array $payload = [])
+ * @method static bool contains(string $event, $channels = null, $count = null, array $payload = null)
+ * @method static bool broadcastContainsAllChannels(array $broadcast, $channels)
+ * @method static bool broadcastContainsChannel(array $broadcast, string $channel)
+ *
+ * @see \Genl\TestBroadcaster\TestBroadcaster
  */
 class TestBroadcasterFacade extends Facade
 {

@@ -9,17 +9,17 @@ class CanTestBroadcastingTest extends TestCase
     /**
      * @test
      */
-    public function it_can_assert_when_an_event_is_broadcasted()
+    public function it_can_assert_when_an_event_is_broadcast()
     {
         try {
-            $this->assertEventBroadcasted(TestEvent::class);
+            $this->assertEventHasBroadcast(TestEvent::class);
             $this->fail("assertEventBroadcasted asserted that an event was broadcasted when it wasn't");
         } catch (ExpectationFailedException $e) {
         }
 
         event(new TestEvent());
 
-        $this->assertEventBroadcasted(TestEvent::class);
+        $this->assertEventHasBroadcast(TestEvent::class);
     }
 
     /**
@@ -28,22 +28,22 @@ class CanTestBroadcastingTest extends TestCase
     public function it_can_assert_if_an_event_was_broadcasted_a_given_amount_of_times()
     {
         try {
-            $this->assertEventBroadcasted(TestEvent::class, 1);
+            $this->assertEventHasBroadcast(TestEvent::class, 1);
             $this->fail("assertEventBroadcasted asserted that an event was broadcasted once when it wasn't");
         } catch (ExpectationFailedException $e) {
         }
 
         event(new TestEvent());
-        $this->assertEventBroadcasted(TestEvent::class, 1);
+        $this->assertEventHasBroadcast(TestEvent::class, 1);
 
         try {
-            $this->assertEventBroadcasted(TestEvent::class, 2);
+            $this->assertEventHasBroadcast(TestEvent::class, 2);
             $this->fail("assertEventBroadcasted asserted that an event was broadcasted twice when only was broadcasted once");
         } catch (ExpectationFailedException $e) {
         }
 
         event(new TestEvent());
-        $this->assertEventBroadcasted(TestEvent::class, 2);
+        $this->assertEventHasBroadcast(TestEvent::class, 2);
     }
 
     /**
@@ -53,10 +53,10 @@ class CanTestBroadcastingTest extends TestCase
     {
         event(new TestEvent());
 
-        $this->assertEventBroadcasted(TestEvent::class, 'private-channel-name');
+        $this->assertEventHasBroadcast(TestEvent::class, 'private-channel-name');
 
         try {
-            $this->assertEventBroadcasted(TestEvent::class, 'somethingelse-fake-channel');
+            $this->assertEventHasBroadcast(TestEvent::class, 'somethingelse-fake-channel');
             $this->fail("assertEventBroadcasted asserted that an event was broadcasted on a given channel when it wasn't");
         } catch (ExpectationFailedException $e) {
         }
@@ -69,10 +69,10 @@ class CanTestBroadcastingTest extends TestCase
     {
         event(new TestEvent());
 
-        $this->assertEventBroadcasted(TestEvent::class, ['private-channel-name', 'private-another-channel-name']);
+        $this->assertEventHasBroadcast(TestEvent::class, ['private-channel-name', 'private-another-channel-name']);
 
         try {
-            $this->assertEventBroadcasted(TestEvent::class, [
+            $this->assertEventHasBroadcast(TestEvent::class, [
                 'private-channel-name',
                 'somethingelse-fake-channel',
             ]);

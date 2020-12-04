@@ -53,9 +53,10 @@ class TestBroadcaster extends Broadcaster
     /**
      * Return if the broadcaster contains event.
      *
-     * @param   string  $event
-     * @param   mixed   $channel
-     *
+     * @param string $event
+     * @param null $channels
+     * @param null $count
+     * @param array|null $payload
      * @return bool
      */
     public function contains(string $event, $channels = null, $count = null, array $payload = null): bool
@@ -93,7 +94,7 @@ class TestBroadcaster extends Broadcaster
         if (! is_array($channels)) {
             return $this->broadcastContainsChannel($broadcast, $channels);
         }
-        
+
         foreach ($channels as $channel) {
             if (! $this->broadcastContainsChannel($broadcast, $channel)) {
                 return false;
