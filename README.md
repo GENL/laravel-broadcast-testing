@@ -52,7 +52,7 @@ This package adds the `assertEventBroadcasted` method to your testing.
 public function it_can_assert_when_an_event_is_broadcasted()
 {
     event(new TestEvent());
-    $this->assertEventBroadcasted(TestEvent::class);
+    $this->assertEventWasBroadcast(TestEvent::class);
 }
 ```
 
@@ -64,10 +64,10 @@ Futhermore it is also possible to test for how many times an even is broadcasted
 public function it_can_assert_if_an_event_was_broadcasted_a_given_amount_of_times()
 {
     event(new TestEvent());
-    $this->assertEventBroadcasted(TestEvent::class, 1);
+    $this->assertEventWasBroadcast(TestEvent::class, 1);
 
     event(new TestEvent());
-    $this->assertEventBroadcasted(TestEvent::class, 2);
+    $this->assertEventWasBroadcast(TestEvent::class, 2);
 }
 ```
 
@@ -78,14 +78,14 @@ public function it_can_assert_if_an_event_was_broadcasted_a_given_amount_of_time
 public function it_can_assert_if_an_event_was_broadcasted_a_given_amount_of_times()
 {
     event(new TestEvent());
-    $this->assertEventBroadcasted(TestEvent::class, 1);
+    $this->assertEventWasBroadcast(TestEvent::class, 1);
 
     event(new TestEvent());
-    $this->assertEventBroadcasted(TestEvent::class, 2);
+    $this->assertEventWasBroadcast(TestEvent::class, 2);
 }
 ```
 
-The `assertEventBroadcasted` method can also assert on which channels the event is broadcasted to.
+The `assertEventWasBroadcast` method can also assert on which channels the event is broadcasted to.
 It can either take a single string, for a single channel, or an array of channel names.
 ```php
 /**
@@ -96,10 +96,10 @@ public function it_can_assert_if_an_event_was_broadcasted_on_multiple_channels()
     event(new TestEvent());
 
     // 
-    $this->assertEventBroadcasted(TestEvent::class, ['private-channel-name', 'private-another-channel-name']);
+    $this->assertEventWasBroadcast(TestEvent::class, ['private-channel-name', 'private-another-channel-name']);
 
     try {
-        $this->assertEventBroadcasted(TestEvent::class, [
+        $this->assertEventWasBroadcast(TestEvent::class, [
             'private-channel-name',
             'somethingelse-fake-channel',
         ]);
