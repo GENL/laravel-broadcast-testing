@@ -6,11 +6,11 @@ use Illuminate\Support\Str;
 
 trait CanTestBroadcasting
 {
-    public function assertEventHasBroadcast($event, $channels = null, $count = null)
+    public function assertEventWasBroadcast($event, $channels = null, $count = null)
     {
         $broadcaster = resolve(TestBroadcaster::class);
 
-        $message = "Failed asserting that event '$event' was broadcasted";
+        $message = "Failed asserting that event '$event' was broadcast";
 
         if (is_integer($channels)) {
             $count = $channels;
