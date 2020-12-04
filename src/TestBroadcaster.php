@@ -6,7 +6,10 @@ use Illuminate\Broadcasting\Broadcasters\Broadcaster;
 
 class TestBroadcaster extends Broadcaster
 {
-    private array $broadcasts = [];
+    /**
+     * @var array
+     */
+    private $broadcasts = [];
 
     /**
      * {@inheritdoc}
