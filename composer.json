@@ -1,5 +1,5 @@
 {
-    "name": "GENL/laravel-broadcast-testing",
+    "name": "genl/laravel-broadcast-testing",
     "description": "A broadcast provider for testing event broadcasting",
     "keywords": [
         "laravel",
